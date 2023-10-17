@@ -1,0 +1,11 @@
+.CardItem {
+    width: 300px; /* Ancho del cuadro */
+    height: auto; /* Alto del cuadro */
+    margin: 10px; /* Margen exterior del cuadro */
+    padding: 20px; /* Relleno interno del cuadro */
+    border: 1px solid #ccc; /* Borde del cuadro */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #fff; /* Color de fondo del cuadro */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: center;
+  }

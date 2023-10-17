@@ -1,0 +1,15 @@
+.Counter{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.Controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Buttonma{
+    width: 2rem;
+    height: 2rem;
+    margin: 0.7rem;
+}
