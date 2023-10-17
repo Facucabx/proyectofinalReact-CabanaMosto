@@ -10,9 +10,19 @@ nav{
 Link{
   text-decoration: none;
 }
-h3{
-color: rgb(222, 223, 226);
+h1{
+  text-align: center;
+
 }
+h3{
+  text-align: center;
+color: rgb(103, 125, 189);
+}
+.button{
+  display: flex;
+  justify-content: center;
+}
+
 .ActiveOption{
   color: rgb(252, 252, 252);
   font-weight: bold;
@@ -49,4 +59,19 @@ color: rgb(222, 223, 226);
 .ListGroup{
   display: flex;
   justify-content:center;
+}
+.CardItemCarrito{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  background-color: rgb(165, 165, 245);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+.CardContenedorCarrito{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
