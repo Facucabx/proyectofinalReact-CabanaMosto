@@ -75,3 +75,16 @@ color: rgb(103, 125, 189);
   display: flex;
   justify-content: center;
 }
+
+.OptionDetalle{
+  background-color: rgb(40, 226, 133);
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+  color: black;
+}
+.OptionDetalle:hover{
+  background-color: rgb(55, 138, 97);
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+  color: rgb(248, 245, 245);
+}

@@ -1,10 +1,17 @@
-.CartImg{
+.CartWidget{
     height: 30px;
-    background-color: rgb(226, 228, 231);
+    background-color: rgb(30, 214, 153);
     padding: 0.5rem;
-    color: rgb(0, 140, 255);
+    color: rgb(32, 32, 32);
     font-size: 1.5rem;
     border-radius: 1rem;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+.CartImg{
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
