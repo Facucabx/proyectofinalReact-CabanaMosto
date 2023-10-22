@@ -7,7 +7,7 @@ const Checkout = () => {
     const[user,setUser]=useState({})
     const[validateEmail, setValidateEmail]= useState('')
     const[orderId, setOrderId]=useState('')
-    const {cart, total, clear}=useContext(CartContext)
+    const {cart, cartTotal, clear}=useContext(CartContext)
     const datosComprador = (e)=>{
         setUser({
             ...user,
@@ -23,7 +23,7 @@ const Checkout = () => {
             let order = {
                 user,
                 item:cart,
-                total:total(),
+                total:cartTotal(),
                 date:serverTimestamp()
             }
             const ventas = collection(db, "orders")
@@ -46,6 +46,7 @@ const Checkout = () => {
             :        <div>
             <h2>Terminar compra</h2>
             <h5>Por favor llenar con sus datos</h5>
+
             <form onSubmit={finalizarCompra}>
                 <div className="">
                     <label className="">Nombre Completo:</label>
@@ -63,8 +64,9 @@ const Checkout = () => {
                     <label className="">Repita su Email</label>
                     <input className="" type="email" placeholder="email@email.com" name="mail" onChange={((e)=>setValidateEmail(e.target.value))} />
                 </div>
+                <button className="" type="submit" disabled={validateEmail !== user.mail}>Generar orden</button>
             </form>
-            <button className="" type="submit" disabled={validateEmail !== user.mail}>Generar orden</button>
+            
         </div>}
         </div>
     )

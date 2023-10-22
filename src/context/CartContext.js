@@ -29,7 +29,7 @@ export const CartProvider = ({children}) => {
     }
 
     const cartTotal = () => {
-        return cart.reduce((total, itemId) => total += itemId.quantity, 0);
+        return cart.reduce((total, item) => total + (item.price * item.quantity), 0);
     }
 
     return (
