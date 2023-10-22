@@ -9,3 +9,18 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
     text-align: center;
   }
+.Option{
+  background-color: rgb(118, 118, 233);
+  color: white;
+  padding: 0.7rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+.Option:hover{
+  background-color: rgb(73, 73, 241);
+}
+.itemFooter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

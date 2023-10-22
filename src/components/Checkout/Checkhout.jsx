@@ -2,6 +2,8 @@ import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import React, {useState, useContext} from "react";
 import { db } from "../../services/firebase";
 import { CartContext } from "../../context/CartContext";
+import './Checkhout.css'
+import { Link } from "react-router-dom";
 
 const Checkout = () => {
     const[user,setUser]=useState({})
@@ -37,11 +39,12 @@ const Checkout = () => {
     
     }
     return (
-        <div>
+        <div className="contenedorCheck">
             {orderId !== '' 
-            ?<div>
+            ?<div className="datosCheck">
                 <h2>Felicitaciones! Tu orden fue generada con exito!</h2>
                 <h5>Su id de registro es: {orderId}</h5>
+                <button> <Link to='/' className="BotonBack"><h3>Ver más productos</h3></Link></button>
             </div> 
             :        <div>
             <h2>Terminar compra</h2>
@@ -54,7 +57,7 @@ const Checkout = () => {
                 </div>
                 <div className="">
                     <label className="">Telefono:</label>
-                    <input onChange={datosComprador} className="" type="number" placeholder="Nombre y apellido" name="phone" />
+                    <input onChange={datosComprador} className="" type="number" placeholder="5433647777" name="phone" />
                 </div>
                 <div className="">
                     <label className="">Email</label>
@@ -64,7 +67,7 @@ const Checkout = () => {
                     <label className="">Repita su Email</label>
                     <input className="" type="email" placeholder="email@email.com" name="mail" onChange={((e)=>setValidateEmail(e.target.value))} />
                 </div>
-                <button className="" type="submit" disabled={validateEmail !== user.mail}>Generar orden</button>
+                <button className="botonOrden" type="submit" disabled={validateEmail !== user.mail}>Generar orden</button>
             </form>
             
         </div>}

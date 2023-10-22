@@ -22,7 +22,7 @@ const CartItem = ({ item }) => {
                     <p className="Info">Cantidad: {quantity}</p>
                 </section>
                 <footer className="ItemFooter">
-                    <button className="btn btn-danger" onClick={handleRemove}>
+                    <button className="" onClick={handleRemove}>
                         X
                     </button>
                 </footer>

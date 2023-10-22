@@ -42,14 +42,14 @@ const ItemDetail = ({producto }) => {
                 </p>
             </section>
             <footer className='ItemFooter'>
+                <div className='contendorFooter' >
                 {
-                    quantityAdded > 0 ? (
-                        <Link to='/cart' className='Option'>Ir al carrito</Link>
-                    ) : (
-                        <ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />
-                    )
-                }
+                    quantityAdded > 0 ? 
+                    (<div><Link to='/cart' className='Option'>Ir al carrito</Link></div>)
+                    : (<div><ItemCount initial={1} stock={stock} onAdd={handleOnAdd} /></div>)
 
+                }
+                </div>
             </footer>
         </article>
 

@@ -1,0 +1,13 @@
+.contenedorCheck{
+    display: flex;
+    justify-content: center;
+}
+.datosCheck{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.botonOrden{
+    width: 100%;
+    margin-top: 1rem;
+}

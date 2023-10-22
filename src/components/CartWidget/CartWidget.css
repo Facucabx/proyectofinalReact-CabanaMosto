@@ -1,17 +1,33 @@
-.CartWidget{
-    height: 30px;
-    background-color: rgb(30, 214, 153);
-    padding: 0.5rem;
-    color: rgb(32, 32, 32);
-    font-size: 1.5rem;
-    border-radius: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.CartWidget {
+  height: 30px;
+  background-color: rgb(253, 253, 253);
+  padding: 0.7rem;
+  color: rgb(32, 32, 32);
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.CartImg{
-    height: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.CartImg {
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedorWid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorNumero {
+  background-color: red;
+  padding: 0.4rem;
+  height: 15px;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
