@@ -38,13 +38,13 @@ npm start
 
 3. Abre tu navegador web y accede a http://localhost:3000 para ver la aplicación en funcionamiento.
 
-Contribuciones
+## Contribuciones
 Si deseas contribuir a este proyecto, siéntete libre de hacer un fork y enviar pull requests. Apreciamos tus contribuciones.
 
-Licencia
+## Licencia
 Este proyecto se distribuye bajo la licencia MIT. Para obtener más detalles, consulta el archivo LICENSE incluido en este repositorio.
 
-Contacto
+## Contacto
 Si tienes alguna pregunta o comentario sobre este proyecto, no dudes en ponerte en contacto conmigo:
 
 Nombre: Facundo Ezequiel Cabaña Mosto
