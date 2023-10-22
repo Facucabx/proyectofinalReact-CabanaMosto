@@ -19,7 +19,7 @@ const ItemListContainer = ({ greeting }) => {
             .then((res) => {
                 const list = res.docs.map((product)=>{
                     return{
-                        id:product.id,
+                        idP:product.id,
                         ...product.data()
                     }
                 })
