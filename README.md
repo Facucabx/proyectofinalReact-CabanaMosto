@@ -1,4 +1,4 @@
-# Proyecto de E-commerce - Facundo Ezequiel Cabaña
+# Proyecto de E-commerce - Facundo Ezequiel Cabaña Mosto
 
 Este proyecto es el resultado del trabajo final desarrollado por Facundo Ezequiel Cabaña como parte de un curso de React. La aplicación es un e-commerce que permite a los usuarios navegar y comprar productos de un rubro a elección.
 
