@@ -1,19 +1,17 @@
-import { createContext, useState } from "react"
+import React,{ createContext, useState } from "react"
 
-export const CartContext = createContext({
-    cart:[]
-})
+export const CartContext = createContext();
 
 export const CartProvider = ({children}) => {
     const [cart, setCart] = useState([])
 
-    console.log(cart)
-
     const addItem = (item, quantity) => {
-        if(!isInCart(item.id)) {
-            setCart(prev => [...prev, {...item, quantity}])
+        if (isInCart(item.id)) {
+            let pos = cart.findIndex(x => x.id === item.id);
+            cart[pos].quantity += quantity;
+            setCart([...cart]);
         } else {
-            console.error('El producto ya fue agregado')
+            setCart([...cart, {...item, quantity:quantity}]);
         }
     }
 
@@ -22,16 +20,20 @@ export const CartProvider = ({children}) => {
         setCart(cartUpdated)
     }
 
-    const clearCart = () => {
-        setCart([])
+    const clear = () => {
+        setCart([]);
     }
 
     const isInCart = (itemId) => {
-        return cart.some(prod => prod.id === itemId)
+        return cart.some(x => x.id === itemId);
+    }
+
+    const cartTotal = () => {
+        return cart.reduce((total, itemId) => total += itemId.quantity, 0);
     }
 
     return (
-        <CartContext.Provider value={{ cart, addItem, removeItem, clearCart}}>
+        <CartContext.Provider value={{ cart, addItem, removeItem, clear, cartTotal}}>
             { children}
         </CartContext.Provider>
     )
