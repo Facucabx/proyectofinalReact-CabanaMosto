@@ -1,4 +1,4 @@
-# Proyecto de E-commerce - Facundo Ezequiel Cabaña
+# Proyecto de E-commerce - Facundo Ezequiel Cabaña Mosto
 
 ## VIDEO DEL FUNCIONAMIENTO DEL PROYECYO
 
