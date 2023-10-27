@@ -1,5 +1,10 @@
 # Proyecto de E-commerce - Facundo Ezequiel Cabaña
 
+## VIDEO DEL FUNCIONAMIENTO DEL PROYECYO
+
+- https://www.youtube.com/watch?v=uQ3uuAhHs4E
+
+
 Este proyecto es el resultado del trabajo final desarrollado por Facundo Ezequiel Cabaña como parte de un curso de React. La aplicación es un e-commerce que permite a los usuarios navegar y comprar productos de un rubro a elección.
 
 ## User Stories / Descripción del Proyecto
